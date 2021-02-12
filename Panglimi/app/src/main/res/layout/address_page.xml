@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Address_Page">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/savedAddress">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="저장된 주소 : "
+                android:gravity="center_vertical"
+                android:id="@+id/savedadtitle"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/savedad"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="저장된 주소"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/savedadtitle"
+                android:layout_marginTop="20dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/savedAddress">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="검색된 주소 : "
+                android:gravity="center"
+                android:id="@+id/adtitle"
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/daum_result"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="주소를 검색해주세요"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/adtitle"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#CCCCCC"
+        android:layout_below="@id/rl"
+        android:id="@+id/rl2"/>
+
+    <WebView
+        android:id="@+id/daum_webview"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_weight="4"
+        android:layout_below="@+id/rl2"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="확인"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="#45d6a3"
+        android:id="@+id/btn"/>
+
+</RelativeLayout>

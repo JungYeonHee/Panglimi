@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.panglimi.Findaccount_Page">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/app_login"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아이디/비밀번호 찾기"
+            android:textSize="20dp"
+            android:layout_below="@id/image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:id="@+id/findidpw"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/findidpw"
+            android:id="@+id/successId">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아이디 : "
+                android:layout_marginTop="60dp"
+                android:id="@+id/tvid"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="오류"
+                android:layout_toRightOf="@+id/tvid"
+                android:layout_marginTop="60dp"
+                android:id="@+id/etid"
+                android:layout_marginLeft="20dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/successId"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/successPw">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="비밀번호 : "
+                android:layout_marginTop="50dp"
+                android:id="@+id/tvpw"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="오류"
+                android:layout_toRightOf="@+id/tvpw"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/etpw"/>
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="    로그인 페이지로 가기    "
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/successPw"
+            android:layout_marginTop="80dp"
+            android:layout_centerHorizontal="true"
+            android:background="#45d6a3"
+            android:id="@+id/okBtn"/>
+    </RelativeLayout>
+</ScrollView>

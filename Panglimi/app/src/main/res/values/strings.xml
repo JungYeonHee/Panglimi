@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">팡리미</string>
+    <string name="hint_address">주소를 입력하세요.</string>
+    <string name="hint_address_detail">주소 나머지 부분을 입력 하세요.</string>
+    <string name="msg_search_address">주소 검색(다음)</string>
+    <string name="kakao_app_key">a50e0101bdaf7190e8db510f8ef6688e</string>
+    <string name="channel_name">channel_name</string>
+    <string name="channel_description">channel_description</string>
+</resources>

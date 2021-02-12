@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.panglimi.Findaccount_Page">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/app_login"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아이디/비밀번호 찾기"
+            android:textSize="20dp"
+            android:layout_below="@id/image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:id="@+id/findidpw"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/findidpw"
+            android:id="@+id/findName"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이름 : "
+                android:layout_marginTop="70dp"
+                android:id="@+id/tvName"/>
+
+            <EditText
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvName"
+                android:layout_marginTop="55dp"
+                android:id="@+id/name"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/findName"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/findEmail">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이메일 : "
+                android:layout_marginTop="50dp"
+                android:id="@+id/tvEmail"/>
+
+            <EditText
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvEmail"
+                android:layout_marginTop="35dp"
+                android:id="@+id/email"/>
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="찾기"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop = "80dp"
+            android:layout_centerHorizontal="true"
+            android:background="#45d6a3"
+            android:id="@+id/okBtn"
+            android:layout_below="@+id/findEmail"/>
+    </RelativeLayout>
+</ScrollView>

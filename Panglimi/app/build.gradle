@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        release {
+            storeFile file('C:\\Users\\Owner\\Desktop\\panglimi.jks')
+            storePassword 'panglimi'
+            keyAlias = 'panglimi'
+            keyPassword 'panglimi'
+        }
+    }
+    compileSdkVersion 29
+    buildToolsVersion "30.0.1"
+    defaultConfig {
+        applicationId "com.example.project_pang"
+        minSdkVersion 15
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.github.armcha:SpaceNavigationView:1.6.0'
+    implementation 'com.android.support:design:29.0.0'
+    implementation 'com.android.volley:volley:1.1.0' //volley
+    implementation 'com.google.code.gson:gson:2.8.5' //json
+    //kakao
+    api group: 'com.kakao.sdk', name: 'usermgmt', version: '1.14.0'
+    //switchButton
+    implementation 'com.kyleduo.switchbutton:library:2.0.0'
+}

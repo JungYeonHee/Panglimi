@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="사유">
+        <item>지팡이와 연결이 잘 되지않음</item>
+        <item>잘 사용하지 않음</item>
+        <item>더 이상 사용할 필요가 없음</item>
+        <item>기타</item>
+    </string-array>
+
+</resources>
